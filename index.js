@@ -15,8 +15,13 @@ var _data = require('./lib/data');
 
 //testing
 //@TODO delete this
-_data.create('test', 'sample', {'name': 'test'}, function(err){
-     console.log('created', err);
+// _data.create('test', 'sample', {'name': 'test'}, function(err){
+//      console.log('created', err);
+    
+// });
+//reading data
+_data.read('test', 'sample', function(err, data){
+     console.log('Success!', err, 'data', data);
     
 });
 
