@@ -20,9 +20,19 @@ var _data = require('./lib/data');
     
 // });
 //reading data
-_data.read('test', 'sample', function(err, data){
-     console.log('Success!', err, 'data', data);
+// _data.read('test', 'sample', function(err, data){
+//      console.log('Success!', err, 'data', data);
     
+// });
+
+//updating _data
+// _data.update('test', 'sample', {'name':'duke lester', 'course':'Node Js'},function(err, data){
+//     console.log('updated', err, data);
+// });
+
+//delete the file
+_data.delete('test', 'sample',function(err){
+    console.log('deleted', err);
 });
 
 // instantiate the http server
